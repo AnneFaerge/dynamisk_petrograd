@@ -41,58 +41,24 @@
     </template>
 
     <div class="container">
-        <div class="row recipes">
+        <div class="row produktliste">
             <!-- TemplateRecipe ind her -->
+            <template id="produkt_template">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <img class="img-responsive data_billede" src="imgs/small/baltiskbondesuppe-sm.jpg">
+                    <h4 class="data_navn">DATA_NAVN</h4>
+                    <h3 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h3>
+                    <!--        TODO: sæt udsolgt class ved udsolgt produkt-->
+                    <h3 class="udsolgt_tekst">Denne ret er desværre udsolgt</h3>
+                    <!--        skal kun vises hvis produkt er udsolgt-->
+                    <h3 class="rabat_pris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h3>
+                    <!--        TODO: skal kun vises ved produkter med rabatpris-->
+                    <p>Lækkert</p>
+                    <button type="button" class="btn btn-primary btn-sm open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
+                </div>
+            </template>
         </div>
     </div>
-
-    <!--Forret 1-->
-    <template id="produkt_template">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
-            <img class="img-responsive data_billede" src="imgs/small/baltiskbondesuppe-sm.jpg">
-            <h4 class="data_navn">DATA_NAVN</h4>
-            <h3 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h3>
-            <!--        TODO: sæt udsolgt class ved udsolgt produkt-->
-            <h3 class="udsolgt_tekst">Denne ret er desværre udsolgt</h3>
-            <!--        skal kun vises hvis produkt er udsolgt-->
-            <h3 class="rabat_pris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h3>
-            <!--        TODO: skal kun vises ved produkter med rabatpris-->
-            <p>Lækkert</p>
-            <button type="button" class="btn btn-primary btn-sm open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-        </div>
-    </template>
-    <!--    forret 2-->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
-        <img src="imgs/small/bochkarev-sm.jpg">
-        <h4>Bochkarev</h4>
-        <p>Også lækkert</p>
-        <button type="button" class="btn btn-primary btn-sm open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-    </div>
-    <!--    forret 3-->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
-        <img src="imgs/small/boef-sm.jpg">
-        <h4>Bøf</h4>
-        <p>Uhmm</p>
-        <button type="button" class="btn btn-primary btn-sm open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-    </div>
-    <!--    forret 4-->
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
-        <img src="imgs/small/bondeboller-sm.jpg">
-        <h4>Bondeboller</h4>
-        <p>Ummenum</p>
-        <button type="button" class="btn btn-primary btn-sm open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-    </div>
-    <!--
-    <template id="templateRecipe">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <img>
-            <h4>Navn på ret</h4>
-            <p>Text</p>
-            <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-        </div>
-
-    </template>
--->
 
 
 
@@ -100,6 +66,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="petrograd.js"></script>
     <script src="petrograd.js"></script>
 
 </body>
