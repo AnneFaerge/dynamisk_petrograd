@@ -1,0 +1,19 @@
+/*
+ Heri tilføjes dine CSS-regler
+*/
+
+body {
+    margin-top: 5vw;
+}
+img {
+    width: 18vw;
+    height: 16vw;
+}
+.btn {
+    color: white;
+    background-color: gray;
+    border-style: none;
+}
+.btn:hover {
+    background-color: darkgrey;
+}
